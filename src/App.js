@@ -1,13 +1,24 @@
-import "./App.css";
+import "./styles.css";
+import Temperature from "./Temperature";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello World dfsf</h1>
-      </header>
+    <div className="container">
+      <div className="weather-app-wrapper">
+        <div className="weather-app">
+          <Temperature />
+        </div>
+        <span class="code-by">
+          <a
+            href="https://github.com/krystynamv/weather-react"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open-source code
+          </a>{" "}
+          by Krystyna Moiseieva
+        </span>
+      </div>
     </div>
   );
 }
-
-export default App;
